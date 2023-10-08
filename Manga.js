@@ -1,8 +1,8 @@
-import fetch from 'node-fetch'; // si estás en un entorno de servidor o usando Node.js
+import Chapter from 'node-fetch'; // si estás en un entorno de servidor o usando Node.js
 // O usa `fetch` en un entorno de navegador si estás en el lado del cliente
 
 async function importModuleFromURL(url) {
-  const response = await fetch(url);
+  const response = await Chapter(url);
   const moduleCode = await response.text();
   const module = new Function(moduleCode); // Esto evaluará el código como un módulo
 

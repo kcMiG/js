@@ -37,7 +37,7 @@
     maxImageAmount,
     getImagePromises,
     title = `package_${Date.now()}`,
-    imageSuffix = 'jpg',
+    imageSuffix = 'webp',
     zipOptions = {},
     positionOptions = {}
   }) {
